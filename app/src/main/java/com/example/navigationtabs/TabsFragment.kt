@@ -7,7 +7,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.navigationtabs.databinding.FragmentTabsBinding
 
-class TabsFragment: Fragment(R.layout.fragment_tabs) {
+class TabsFragment : Fragment(R.layout.fragment_tabs) {
 
     private lateinit var binding: FragmentTabsBinding
 
