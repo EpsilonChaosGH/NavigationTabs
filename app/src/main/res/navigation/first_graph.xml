@@ -9,5 +9,5 @@
         android:id="@+id/firstFragment"
         android:name="com.example.navigationtabs.FirstFragment"
         android:label="FirstFragment"
-        tools:layout="@layout/fragment_first"/>
+        tools:layout="@layout/fragment_first" />
 </navigation>

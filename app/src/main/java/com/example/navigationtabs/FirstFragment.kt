@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.navigationtabs.databinding.FragmentFirstBinding
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import kotlin.random.Random
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
 
@@ -25,6 +23,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
                 viewModel.getRandomNumber()
             }
         }
+
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
             viewModel.state.collect {
                 binding.textView.text = it.toString()

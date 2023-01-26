@@ -26,5 +26,4 @@ class RepositoryImpl : Repository {
 
     override fun listenCurrentNumber(): Flow<Int> = numberFlow
 
-
 }

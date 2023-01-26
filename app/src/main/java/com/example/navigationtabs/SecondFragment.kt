@@ -23,11 +23,11 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
                 viewModel.getRandomNumber()
             }
         }
+
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
             viewModel.state.collect {
                 binding.textView.text = it.toString()
             }
-
         }
     }
 }

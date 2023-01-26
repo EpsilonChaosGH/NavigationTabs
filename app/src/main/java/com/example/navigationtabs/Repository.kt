@@ -6,8 +6,8 @@ interface Repository {
 
     fun listenCurrentNumber(): Flow<Int>
 
-    suspend fun getRandomNumber()
-
     suspend fun loadNumber()
+
+    suspend fun getRandomNumber()
 
 }
